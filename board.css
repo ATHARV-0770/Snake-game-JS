@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url(https://i.pinimg.com/736x/f4/f9/db/f4f9db18615d323e8b449d0ddf61ce47.jpg);
+    object-fit: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    position: relative;
+    right: 100px;
+}
+
+.infos{
+    position: relative;
+    top: -40px;
+    
+}
+.info{
+    padding: 8px;
+    border: 5px solid rgba(19, 227, 19, 0.936);
+    
+}
+.whole{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#board{
+    height: 500px;
+    width: 80vw;
+    max-width: 800px;
+    /* background-color: transparent; */
+    /* position: relative; */
+    /* left: 350px; */
+    /* display: flex;
+    justify-content: center; */
+    border: 5px solid rgba(19, 227, 19, 0.936);
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    
+    
+
+}
+
+
+#board div{
+    width: 30px;
+    height: 30px;
+}
+.food{
+    background-color: rgba(19, 227, 19, 0.936);
+}
+
+#scorebox{
+    
+}
+.snake{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 3px solid black;
+
+}
+.head{
+    background-color: orangered;
+    border-radius: 10px;
+    border: 5px solid white;
+    transform: scale(1.02);
+}
